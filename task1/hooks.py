@@ -227,3 +227,8 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+doc_events = {
+    "Aadhaar Card": {
+        "before_save": "task1.task1.doctype.aadhaar_card.aadhaar_card.AadhaarCard.before_save"
+    }
+}
